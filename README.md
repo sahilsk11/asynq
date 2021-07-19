@@ -24,4 +24,4 @@ To run the client, run:
 go run cmd/client/main.go
 ```
 
-The client adds one `SEND_EMAIL` job and one `REFRESH` job to the queue.
+The client adds one `SEND_EMAIL` job and one `REFRESH` job to the respective queues.
