@@ -13,6 +13,7 @@ func main() {
 
 	srv := asynq.NewServer(r, asynq.Config{
 		Concurrency: 1,
+		Queues:      map[string]int{"refresh": 1},
 	})
 
 	srv.Run(mux)
